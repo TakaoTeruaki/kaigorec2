@@ -9,9 +9,8 @@ body{
   min-width: 650px;
   .header{
     height: 56px;
-    // width: 100%;
     padding: 0 150px;
-    background-color: #55c500;
+    background-color: #00BFFF;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -21,6 +20,7 @@ body{
       &--text{
         text-decoration: none;
         color: #fff;
+        font-family: sans-serif;
       }
     }
     &__right{
@@ -33,27 +33,33 @@ body{
     }
   }
   .contents{
-    margin: 30px auto 0;
+    margin: 20px auto;
     background-color: #fff;
     height: 600px;
-    width: 70%;
+    width: 50%;
     overflow: scroll;
     .content{
-      padding: 10px;
+      margin: 30px auto 0;
+      padding: 30px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
       &__left{
-        padding-right: 20px;
+        padding: 20px;
         &--image{
-          height: 55px;
-          width: 55px;
-          border: solid 1px;
+          height: 350px;
+          width: 530px;
+          border: solid 0.5px;
+          &--btn{
+            width: 530px;
+            height: 350px;
+            box-shadow: 2px 2px 4px gray;
+          }
         }
       }
       &__right{
         width: calc(100%-100px);
         &__top{
-          font-size: 20px;
+          font-size: 25px;
           font-weight: bold;
           &--title{
             text-decoration: none;
@@ -63,7 +69,7 @@ body{
         &__bottom{
           font-size: 15px;
           color: #999;
-          display: flex;
+          // display: flex;
           &--userName{
             &--btn{
               text-decoration: none;
@@ -71,7 +77,8 @@ body{
             }
           }
           &--date{
-            margin-left: 20px;
+            font-size: 10px;
+            // margin-left: 20px;
           }
         }
       }
@@ -88,8 +95,19 @@ body{
       font-size: 20px;
       font-weight: bold;
     }
+    .postImage{
+      height: 350px;
+      width: 530px;
+      margin: 0 auto;
+      margin-top: 20px;
+      &__btn {
+        height: 350px;
+        width: 530px;
+        box-shadow: 2px 2px 4px gray;
+      }
+    }
     .postDate{
-      font-size: 15px;
+      font-size: 10px;
       color: #999;
       text-align: center;
     }
@@ -106,7 +124,7 @@ body{
         display: block;
         border-radius: 5px;
         color: #ffffff;
-        background-color:#55c500;
+        background-color:#00BFFF;
         padding: 0 10px;
         text-decoration: none;
         margin-right: 10px;
@@ -115,7 +133,7 @@ body{
         display: block;
         border-radius: 5px;
         color: #ffffff;
-        background-color:#55c500;
+        background-color: red;
         padding: 0 10px;
         text-decoration: none;
         margin-left: 10px;
@@ -151,3 +169,4 @@ body{
     padding: 15px 30px;
   }
 }
+
